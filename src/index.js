@@ -7,7 +7,7 @@ import {
 ;(async () => {
   const db = await openDB()
 
-  let results
+  let results;
 
   results = await db.all(SELECT_VITIMAS_BY_FAIXA_ETARIA, 26, 34)
   console.log(results)
